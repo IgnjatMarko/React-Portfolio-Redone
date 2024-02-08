@@ -1,0 +1,152 @@
+.bg-light {
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.second-heading{
+    font-size: 3rem;
+    margin: 4% 4%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.width-effect{
+    letter-spacing: normal;
+    transition: 1s ease-out;
+}
+
+.width-effect:hover{
+    letter-spacing: 3.5px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3%;
+}
+
+label{
+    padding: 1% 1%;
+}
+
+input, textarea{
+    width: 100%;
+    height: 4vh;
+    font-size: 1.4rem;
+    margin-bottom: 3vh;
+    background-color: #f4f4f4;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Commissioner', Helvetica, sans-serif;
+    text-indent: 2%;
+    padding: 1%;
+}
+
+textarea{
+    height: 8vh;
+}
+
+.btn{
+    color: #f4f4f4;
+    background-color: rgb(26, 188, 156);
+    border: 1px solid rgb(22, 160, 133);
+    border-bottom: 2px solid rgb(22, 160, 133);
+    cursor: pointer;
+    height: 5vh;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #F3BB34;
+    border: 1px solid #be932d9f;
+    border-bottom: 2px solid #be932d9f;
+}
+
+label{
+    font-family: 'Commissioner Bold', Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1024px;
+    background-image: url(/public/imgs/anchor-lee-kO1G3neRA2o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 9rem 5%;
+}
+
+.bottom-section form{
+    grid-column: 1/6;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.youtube{
+    grid-column: 6/13;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.youtube iframe{
+    width: 100%;
+    height: 75%;
+    box-shadow: 12px 6px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+
+    #spotlight, #spotlight header, #headline, #about, #skills, #projects, #contact, footer{
+        width: 100%;
+        min-width: 599px;
+    }
+    
+    #contact{
+        padding: 6rem 5%;
+    }
+    
+    .bottom-section form{
+        width: 100%;
+    }
+    
+    .youtube iframe{
+        width: 100%;
+        
+    }
+    
+    
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+    .second-heading{
+        margin: 2%;
+    }
+    
+    .bottom-section form{
+        width: 100%;
+        grid-column: 1/13;
+    }
+    
+    .youtube{
+        grid-column: 1/13;
+        grid-row: 2;
+        height: 50vh;
+    }
+    
+    }
+    
+
+    
